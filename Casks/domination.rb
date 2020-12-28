@@ -6,12 +6,11 @@ cask "domination" do
   appcast "https://sourceforge.net/projects/domination/rss?path=/Domination"
   name "yura.net Domination"
   desc "Risk Board Game"
-  homepage "http://domination.sourceforge.net"
+  homepage "http://domination.sourceforge.net/"
 
   suite "Domination"
 
   caveats do
     depends_on_java
   end
-
 end
