@@ -8,7 +8,7 @@ cask "controlroom" do
   homepage "https://github.com/twostraws/ControlRoom/"
 
   shimscript = "#{staged_path}/buildAndExport.sh"
-  exportdir = "#{staged_path}"
+  exportdir = staged_path
   downloaddir = "#{staged_path}/ControlRoom-#{version}"
 
   app "#{exportdir}/ControlRoom.app"
@@ -69,8 +69,7 @@ cask "controlroom" do
       main "$@"
     EOS
 
-    set_permissions shimscript, '755'
+    set_permissions shimscript, "755"
     system_command shimscript
   end
-
 end
