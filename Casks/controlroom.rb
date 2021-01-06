@@ -23,6 +23,7 @@ cask "controlroom" do
         writeXcconfig
         archive
         exportArchive
+        deleteFiles
       }
 
       function getTeamID() {
@@ -64,6 +65,11 @@ cask "controlroom" do
       function exportArchive() {
         EXPORTPATH="#{exportdir}"
         xcodebuild -archivePath $ARCHIVE -exportArchive -exportPath $EXPORTPATH -exportOptionsPlist $EXPORTPLIST
+      }
+
+      function deleteFiles() {
+        rm $XCCONFIG
+        rm $EXPORTPLIST
       }
 
       main "$@"
