@@ -14,7 +14,7 @@ cask "controlroom" do
   app "#{exportdir}/ControlRoom.app"
 
   preflight do
-    IO.write shimscript, <<~EOS
+    File.write shimscript, <<~EOS
       #!/usr/bin/env zsh
 
       main() {
