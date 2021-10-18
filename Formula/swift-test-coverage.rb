@@ -1,8 +1,8 @@
 class SwiftTestCoverage < Formula
   desc "Command-line Tool to display the test coverage of a swift package"
   homepage "https://github.com/Nef10/swift-test-coverage"
-  url "https://github.com/Nef10/swift-test-coverage/archive/refs/tags/v0.0.2.tar.gz"
-  sha256 "ac0c58289cde648564373a743250752ebc71a7971bec710772e3e5fa9b9f6664"
+  url "https://github.com/Nef10/swift-test-coverage/archive/refs/tags/v0.0.3.tar.gz"
+  sha256 "a0f6126af6a53f322c56ce506dcfd430fc87fb5576f34264fa27a35a0b3073cb"
   license "MIT"
 
   def install
