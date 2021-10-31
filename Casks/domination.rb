@@ -1,5 +1,5 @@
 cask "domination" do
-  version "1.2.3"
+  version "1.2.4"
   sha256 "e2b2526048123cc838eec1dc96f594b7ae16fce95757fdaadbaaac07a4531a7d"
 
   url "https://downloads.sourceforge.net/domination/Domination_#{version}.zip"
