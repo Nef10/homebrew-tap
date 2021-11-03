@@ -11,7 +11,7 @@ cask "controlroom" do
   exportdir = staged_path
   downloaddir = "#{staged_path}/ControlRoom-#{version}"
 
-  app "#{exportdir}/ControlRoom.app"
+  app "#{exportdir}/Control Room.app"
 
   preflight do
     File.write shimscript, <<~EOS
