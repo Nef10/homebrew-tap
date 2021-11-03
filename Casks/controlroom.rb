@@ -29,7 +29,7 @@ cask "controlroom" do
       function getTeamID() {
         CERTIFICATES=$(security find-identity -p codesigning -v | awk '{$1=$2=""; print $0}' | sed '$d' | sed 's/  //g' | sed 's/"//g' | grep -v CSSMERR_TP_CERT_REVOKED)
         CERTIFICATE=$(echo $CERTIFICATES | grep @ | head -n 1) # first certificate containing an @ - personal teams certificates have the email adress instead of name
-        TEAMID=$(security find-certificate -c "$CERTIFICATE" -p | openssl x509 -text | grep -o "OU=[^,]*" | grep -v Apple | sed s/OU=//g)
+        TEAMID=$(security find-certificate -c "$CERTIFICATE" -p | openssl x509 -text | grep "Subject:" | grep -o "OU=[^,]*" | grep -v Apple | sed s/OU=//g)
       }
 
       function writeExportPlist() {
