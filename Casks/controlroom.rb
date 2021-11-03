@@ -1,6 +1,6 @@
 cask "controlroom" do
-  version "e80815014c80b4caed973f37275009b31d203399"
-  sha256 "24b28ce726cc2dd15d881d0ae551aec58fe3aca231ce7065e65a99ce5848d3bd"
+  version "e76b29da4a8ffa27e2d2bcdce2f825894b9c75f7"
+  sha256 "682ed7dbba0d104619810c8bac55200a207560d54afff9729236b0efe740ba09"
 
   url "https://github.com/twostraws/ControlRoom/archive/#{version}.zip"
   name "Control Room"
