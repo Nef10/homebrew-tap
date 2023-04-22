@@ -7,11 +7,11 @@ cask "domination" do
   desc "Risk Board Game"
   homepage "http://domination.sourceforge.net/"
 
-  suite "Domination"
-  
   livecheck do
     url "https://sourceforge.net/projects/domination/rss?path=/Domination"
   end
+
+  suite "Domination"
 
   caveats do
     depends_on_java
